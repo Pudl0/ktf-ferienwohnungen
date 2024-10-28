@@ -1,0 +1,35 @@
+{
+  "eichenhof-suite": {
+    "name": "Eichenhof Suite",
+    "description": "Die Eichenhof Suite bietet einen geräumigen und komfortablen Rückzugsort für Familien oder kleine Gruppen. Mit einem atemberaubenden Blick auf unseren gepflegten Garten und die majestätischen Eichen genießen Sie hier die perfekte Mischung aus Natur und Komfort.",
+    "shortDescription": "Geräumige Wohnung mit Blick auf den Garten",
+    "images": [
+      "/placeholder.svg?height=600&width=800",
+      "/placeholder.svg?height=600&width=800",
+      "/placeholder.svg?height=600&width=800"
+    ],
+    "maxGuests": 4,
+    "bedrooms": 2,
+    "amenities": ["Balkon", "Kamin", "Waschmaschine", "Geschirrspüler"],
+    "price": 120
+  },
+  "waldblick-loft": {
+    "name": "Waldblick Loft",
+    "description": "Unser Waldblick Loft ist ein charmantes Refugium für Paare oder kleine Familien. Das offene Design und die großen Fenster bieten einen atemberaubenden Blick auf den umliegenden Wald und lassen Sie die Natur hautnah erleben. Genießen Sie die perfekte Mischung aus modernem Komfort und rustikalem Charme.",
+    "shortDescription": "Charmantes Loft mit Panoramablick auf den Wald",
+    "images": [
+      "/placeholder.svg?height=600&width=800",
+      "/placeholder.svg?height=600&width=800",
+      "/placeholder.svg?height=600&width=800"
+    ],
+    "maxGuests": 3,
+    "bedrooms": 1,
+    "amenities": [
+      "Panoramafenster",
+      "Dachterrasse",
+      "Voll ausgestattete Küche",
+      "Hochgeschwindigkeits-WLAN"
+    ],
+    "price": 100
+  }
+}
