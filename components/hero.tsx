@@ -1,10 +1,18 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { BookingModal } from "@/components/booking-modal";
 
 export default function Hero() {
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
+
+  const openBookingModal = () => {
+    setIsBookingModalOpen(true);
+  };
+
   return (
     <section className="relative h-[80vh] sm:h-[70vh] flex items-center justify-center overflow-hidden">
       <Image
@@ -31,12 +39,21 @@ export default function Hero() {
         </p>
         <Button
           className="bg-amber-600 hover:bg-amber-700 text-white text-lg px-6 py-3 rounded-full transition-all duration-300 ease-in-out transform hover:scale-105"
-          onClick={() => console.log("Booking initiated")}
+          onClick={openBookingModal}
         >
           Jetzt Buchen
         </Button>
       </motion.div>
       <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-amber-50 to-transparent"></div>
+
+      <BookingModal
+        isOpen={isBookingModalOpen}
+        onClose={() => setIsBookingModalOpen(false)}
+        apartments={[
+          { id: "eichenhof-suite", name: "Eichenhof Suite" },
+          { id: "waldblick-loft", name: "Waldblick Loft" },
+        ]}
+      />
     </section>
   );
 }

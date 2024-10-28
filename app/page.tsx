@@ -4,7 +4,6 @@ import Description from "@/components/description";
 import Apartment1 from "@/components/apartment1";
 import Apartment2 from "@/components/apartment2";
 import Contact from "@/components/contact";
-import Footer from "@/components/footer";
 
 export default function Component() {
   return (
@@ -26,7 +25,6 @@ export default function Component() {
       <section id="contact">
         <Contact />
       </section>
-      <Footer />
     </div>
   );
 }
